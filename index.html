@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QUIZ 2</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<style>
+
+h1 {color: whitesmoke; text-align: center; background-color: #4d190b}
+
+details {text-align: center; background-color: #4d190b;}
+
+.container { color:whitesmoke; }
+
+.form-control { width: 20  }
+
+body {background-image: url(red.jpg);
+
+    background-size: cover;
+
+
+
+</style>
+
+<h1> .✦ ── 𝗧𝗜𝗖𝗞𝗘𝗧 𝗖𝗘𝗡𝗧𝗘𝗥 ── .✦ </h1>
+
+
+ <div class="container mt-5">
+
+        <details>
+
+        <summary>𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻</summary>
+
+      <div class="col">
+                
+      <input type="text" class="form-control" placeholder="enter name" name="email">
+
+      <br>
+
+      <div class="col">
+                <input type="text" class="form-control" placeholder="enter email" name="email">
+
+     <br>
+
+     <div class="col">
+                
+      <input type="text" class="form-control" placeholder="enter age" name="email">
+
+      <br>
+
+       <div class="col">
+                
+      <input type="text" class="form-control" placeholder="enter number" name="email">
+
+      <br>
+
+    <button type="button" class="btn btn-danger" onclick="check_discount()">submit</button>
+
+
+    </details>
+    </div>
+
+    <br>
+
+    
+
+    <div class="container mt-5">
+
+        <details>
+
+        <summary>𝘁𝗶𝗰𝗸𝗲𝘁 𝗽𝗿𝗶𝗰𝗲</summary>
+
+          <div class="container">
+        <form>
+            <label> </label>
+            <select class="form-select" id="meal">
+                <option value="none">Select</option>
+                <option value="250">Standard</option>
+                <option value="300">Premier</option>
+            </select>
+        
+
+<br>
+         <label>DISCOUNTS</label>
+        <select class="form-select" id="discount">
+            <option value="none"> Select </option>
+            <option value="0.2"> PWD/SC/STUDENT </option>
+            <option value="0"> Regular </option>
+        </select>
+
+        <br>
+
+        <button type="button" class="btn btn-danger" onclick="check_discount()">SUBMIT</button>
+    </form>
+
+
+
+
+         </details>
+    </div>
+
+<br> 
+
+<div class="container mt-5">
+
+    <details>
+
+        <summary>𝗧𝗜𝗖𝗞𝗘𝗧</summary>
+
+<img src="ticket.png" alt="ticket">
+
+ <button type="button" class="btn btn-danger" onclick="check_discount()">CLAIM</button>
+
+
+
+
+
+</details>
+</div>
+
+ <script>
+        
+        function check_discount() {
+            var standard1 = document.getElementById('standard').value;
+            var disc1 = document.getElementById('discount').value;
+            var final_rate = standard1 - (disc1 * standard1);
+
+            window.alert('Your ticket price is' + final_rate);
+        }
+
+    </script>
+
+</html>
+</body>
+
+
+   
